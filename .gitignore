@@ -1,0 +1,18 @@
+# Locals
+.DS_Store
+.thumbs.db
+
+# Temporary files
+.tmp
+
+# Bower
+app/bower_components
+
+# Modules folder
+node_modules
+
+# App
+app/css
+
+# Dist
+dist/

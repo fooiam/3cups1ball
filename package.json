@@ -1,0 +1,46 @@
+{
+  "name": "3cups1ball",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [ "frontcow", "yeoman" ],
+  "homepage": "https://github.com/fooiam/3cups1ball",
+  "bugs": "https://github.com/fooiam/3cups1ball/issues",
+  "author": {
+    "name": "fooiam",
+    "email": "",
+    "url": "https://github.com/fooiam"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fooiam/3cups1ball.git"
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "0.*",
+    "grunt": "0.*",
+    "grunt-autoprefixer": "2.*",
+    "grunt-browser-sync": "2.*",
+    "grunt-contrib-clean": "0.*",
+    "grunt-contrib-concat": "0.*",
+    "grunt-contrib-copy": "0.*",
+    "grunt-contrib-imagemin": "0.*",
+    "grunt-contrib-jshint": "0.*",
+    "grunt-contrib-uglify": "0.*",
+    "grunt-contrib-watch": "0.*",
+    "grunt-open": "0.*",
+    "grunt-sass": "0.*",
+    "grunt-svgmin": "2.*",
+    "grunt-usemin": "3.*",
+    "jshint-stylish": "1.*",
+    "load-grunt-tasks": "3.*",
+    "node-sass": "2.*",
+    "time-grunt": "1.*"
+  },
+  "devDependencies": {
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

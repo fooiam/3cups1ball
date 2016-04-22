@@ -1,0 +1,11 @@
+{
+    "name": "3cups1ball",
+    "dependencies": {
+      "font-awesome": "4.*",
+       "foundation": "zurb/bower-foundation", 
+      "jquery": "2.*",
+      "modernizr": "2.*",
+      "normalize-scss": "3.*"
+      
+  }
+}
