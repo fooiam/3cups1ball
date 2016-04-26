@@ -6,3 +6,97 @@
  * Load the default import file to load code design
  */
 @import "3cups1ball/_imports";
+
+
+@font-face {
+  font-family: 'Conv_kongtext';
+  src: url('../fonts/kongtext.eot');
+  src: local('?'), url('../fonts/kongtext.woff') format('woff'), url('../fonts/kongtext.ttf') format('truetype'), url('../fonts/kongtext.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../medias/images/ground_loop.gif);
+}
+
+.cup, #ball {
+  position: absolute;
+}
+.cup {
+  img {
+    width: 100px;
+    min-width: 100px;
+  }
+  bottom: 45px;
+}
+#ball {
+  img {
+    width: 35px;
+    min-width: 35px;
+  }
+}
+
+#game {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+}
+#gameholder {
+  position: absolute;
+  height: 500px;
+  min-width: 600px;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#messages {
+  padding: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  font-family:'Conv_kongtext',Sans-Serif;
+  position: relative;
+  height: auto;
+  width: 300px;
+  margin: 0 auto;
+  top: 40px;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 4;
+}
+#score {
+  position: absolute;
+  bottom: 21px;
+  right: 0px;
+  color: #ffffff;
+  font-family:'Conv_kongtext',Sans-Serif;
+  font-size: 18px;
+}
+
+.fullrow {
+  background-image: url('../medias/images/ground.gif'), url('../medias/images/bg.gif') ;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-color: #98e0e0;
+  padding-top: 40px;
+}
+
+.absolute-centered {
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.kongtext {
+  font-family:'Conv_kongtext',Sans-Serif !important;
+}
+
+footer {
+  padding: 10px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 10px;
+  color: #b24800;
+  background-color: rgba(60, 31, 2, 0.8);
+}

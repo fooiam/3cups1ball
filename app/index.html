@@ -1,11 +1,9 @@
 <!doctype html>
-<!--[if lte IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <![endif]-->
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3cups1ball</title>
+    <title>Piranha Plant Pursuit</title>
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144-precomposed.png"> -->
@@ -17,58 +15,74 @@
     <!-- <link rel="apple-touch-icon-precomposed" href="/img/favicons/apple-touch-icon-precomposed.png"> -->
     <!-- <link rel="icon" href="/img/favicons/favicon.ico" type="image/x-icon"> -->
 
-    <!-- build:css /css/main.css -->
+    <!-- build:css css/main.css -->
     
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!-- endbuild -->
 
-    <!-- build:js /js/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- build:js js/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js"></script>
     
   </head>
   <body>
 
-    <div class="row">
-      <div class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns radius">
-        <img src="medias/images/frontcow.jpg" width="100%" alt="">
-        <h1>Yo FrontCow!</h1>
-        <ul>
-          <li>Sass compiling</li>
-          <li>Publishing to dist directory</li>
-          <li>Server with LiveReload</li>
-          <li>JSHint</li>
-          <li><i class="fa fa-child"></i> Font Awesome</li>
-          <li>Foundation 5 frontend framework</li>
-          
-        </ul>
-        <h1>Grunt tasks:</h1>
-        <ul>
-          <li>'grunt server' - to start building something</li>
-          <li>'grunt build' - to make your code ready to production</li>
-          <li>'grunt scan-js' - JSHint</li>
-        </ul>
-        <hr>
-        <h2 class="text-right">
-          <a href="https://github.com/bcabanes/generator-frontcow"><i class="fa fa-github"></i></a>
-        </h2>
+  <div class="fullrow">
+      <div class="row">
+          <div id="logo" class="small-12 small-centered columns text-center">
+             <img src="medias/images/logo.png" alt="logo"/>
+          </div>
       </div>
+    <div class="row">
+            <div id="game">
+              <div id="score">Level: 0</div>
+              <div id="messages" class="row text-center"><div id="content"></div></div>
+              <div id="ball"><img src="medias/images/ball.gif" alt="ball"/></div>
+              <div id="cup0" class="cup"><img src="medias/images/cup.gif" alt="cup0"/></div>
+              <div id="cup1" class="cup"><img src="medias/images/cup.gif" alt="cup0"/></div>
+              <div id="cup2" class="cup"><img src="medias/images/cup.gif" alt="cup0"/></div>
+            </div>
     </div>
+  </div>
 
-    <!-- build:js /js/vendor/jquery.min.js -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Footer that is hidden before 'sticky' is ready and appears at the bottom of the page onload -->
+  <footer>
+      <div class="row">
+          <div class="twelve columns text-center">
+              <div class="row">
+                  I do not claim ownership of any of the graphics depicted. They are the sole original property of Nintendo. I do not collect money for this site, it costs me money. <a href="mailto:contact@piranhaplantpursuit">contact@piranhaplantpursuit</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+    <!-- build:js js/vendor/jquery.min.js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- endbuild -->
 
     
-    <!-- build:js /js/vendor/foundation.min.js -->
-    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <!-- build:js js/vendor/foundation.min.js -->
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
     <!-- endbuild -->
-    
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-76970506-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+
 
     <!-- Load Modules -->
-    <!-- build:js /js/app.js -->
-    <script src="/js/app.js"></script>
+    <!-- build:js js/app.js -->
+    <script src="js/app.js"></script>
+    <script src="js/stickyFooter.js"></script>
     <!-- endbuild -->
     <!-- end of Load Modules -->
   </body>
